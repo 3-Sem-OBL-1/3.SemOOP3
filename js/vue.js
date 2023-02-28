@@ -11,7 +11,7 @@ const app = Vue.createApp({
       this.words = []
       this.words.push(word.toUpperCase())
       this.words.push(word.toLowerCase())
-      this.words.push(word.charAt(0).toUpperCase() + word.slice(1))
+      this.words.push(word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       this.words.push(word.slice(0, word.length-1).toLowerCase() + word.charAt(word.length-1).toUpperCase())
       this.words.push(word.split('').reverse().join(''))
     }
